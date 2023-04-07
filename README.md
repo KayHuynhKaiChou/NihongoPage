@@ -1,0 +1,2 @@
+# NihongoPage
+training nihongo
