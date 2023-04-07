@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multichoice Nihongo</title>
+    <link rel="stylesheet" href="test2.css">
+    <link rel = "icon" href = "https://png.pngtree.com/element_our/20190531/ourlarge/pngtree-beautiful-pink-cherry-blossom-logo-illustration-image_1293378.jpg" type = "x-icon">
+    <meta charset="UTF-8">
+</head>
+<body>
+    <img class="image1" src="https://upload.wikimedia.org/wikipedia/vi/3/3e/Shizuka.png" alt="">
+    <img class="image2" src="https://storage.googleapis.com/sticker-prod/lxzM8CnIJEedfFprBtpi/1.png" alt="">
+    <img class="image3" src="https://kenh14cdn.com/thumb_w/660/2018/11/9/j1-1541740459619292897430.png" alt="">
+    <img class="image4" src="https://i.pinimg.com/originals/0c/56/79/0c56799b8f9872257034c8d3a5ae68fd.png" alt="">
+    <div class="swing-total">
+        <div class="multichoice-form" id="cau1">
+            <div class="question">1.Kanji của cụm từ 'Birthday'</div>
+            <ul>
+                <li>A. 先週</li>
+                <li>B. 金曜日</li>
+                <li>C. 学校</li>
+                <li>D. 誕生日</li>            
+            </ul>
+        </div>
+        <div class="multichoice-form" id="cau2">
+            <div class="question">2.Kanji của cụm từ 'Friday'</div>
+            <ul>
+                <li>A. 先週</li>
+                <li>B. 金曜日</li>
+                <li>C. 学校</li>
+                <li>D. 誕生日</li>            
+            </ul>
+        </div>
+        <div class="multichoice-form" id="cau3">
+            <div class="question">3.Kanji của cụm từ 'last week'</div>
+            <ul>
+                <li>A. 先週</li>
+                <li>B. 金曜日</li>
+                <li>C. 来週</li>
+                <li>D. 友達</li>            
+            </ul>
+        </div>
+        <div class="multichoice-form" id="cau4">
+            <div class="question">4.Kanji của cụm từ 'friend'</div>
+            <ul>
+                <li>A. 学生</li>
+                <li>B. 今年</li>
+                <li>C. 医者</li>
+                <li>D. 友達</li>            
+            </ul>
+        </div>
+        <div class="multichoice-form" id="cau5">
+            <div class="question">5.Kanji của cụm từ 'next week'</div>
+            <ul>
+                <li>A. 来年</li>
+                <li>B. 今朝</li>
+                <li>C. 来週</li>
+                <li>D. 会社</li>            
+            </ul>
+        </div>
+        <div class="multichoice-form" id="cau6">
+            <div class="question">6.'give' は　日本語で　何ですか </div>
+            <ul>
+                <li>A. あげます</li>
+                <li>B. もらいます</li>
+                <li>C. 食べます</li>
+                <li>D. 知ります</li>            
+            </ul>
+        </div>
+        <div class="multichoice-form" id="cau7">
+            <div class="question">7.'eraser' は　日本語で　何ですか </div>
+            <ul>
+                <li>A. フォーク</li>
+                <li>B. スプーン</li>
+                <li>C. ロシア</li>
+                <li>D. けしゴム</li>            
+            </ul>
+        </div>
+        <div class="multichoice-form" id="cau8">
+            <div class="question">8.Chọn từ khác loại với các từ còn lại </div>
+            <ul>
+                <li>A. チーズ/li>
+                <li>B. べんとう</li>
+                <li>C. カレー</li>
+                <li>D. とおか</li>            
+            </ul>
+        </div>
+        <div class="multichoice-form" id="cau9">
+            <div class="question">9.'plan' は　日本語で　何ですか </div>
+            <ul>
+                <li>A. フォーク</li>
+                <li>B. スケジュール</li>
+                <li>C. ドイツ</li>
+                <li>D. パソコン</li>            
+            </ul>
+        </div>
+        <div class="multichoice-form" id="cau10">
+            <div class="question">10.'ふゆ' は　日本語で　何ですか </div>
+            <ul>
+                <li>A. 春</li>
+                <li>B. 秋</li>
+                <li>C. 冬</li>
+                <li>D. 夏</li>            
+            </ul>
+        </div>
+        <div class="button-exe">
+            <button id="form-submit" class="form-button">Submit</button>
+            <button id="form-reset" class="form-button">Reset</button>
+        </div>
+    </div>
+    
+    <script src="test2.js"></script>
+    <script>
+        executeChoice(Array.from(document.querySelectorAll('.multichoice-form')),
+        ['D','B','A','D','C','A','D','D','B','C']);
+    </script>
+</body>
+</html>

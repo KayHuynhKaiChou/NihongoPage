@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Login.css">
+    <title>HKT System</title>
+    <link rel = "icon" href = "https://png.pngtree.com/element_our/20190531/ourlarge/pngtree-beautiful-pink-cherry-blossom-logo-illustration-image_1293378.jpg" type = "x-icon">
+    <meta charset="UTF-8">
+</head>
+<body>
+    <img src="https://phunugioi.com/wp-content/uploads/2022/06/Hinh-ve-hoa-anh-dao-cuc-sinh-dong.png" alt="">
+    <img src="https://haycafe.vn/wp-content/uploads/2022/03/Cach-ve-cay-hoa-anh-dao-Nhat-Ban.png" alt="">
+    <form action="" method="POST" class="form" id="form-1">
+        <h3 class="heading">HKT 会社</h3>
+        <h1 class="heading1" >-- LOG IN --</h1>
+        <div class="form-group">
+            <label for="userName" class="form-label">Username </label>
+            <input id="userName" class="form-control" name="userName" type="text" placeholder="Enter username">
+            <span class="form-message"></span>
+        </div>
+        <div class="form-group">
+            <label for="passWord" class="form-label">Password </label>
+            <input id="passWord" class="form-control" name="passWord" type="password" placeholder="Enter password">
+            <span class="form-message"></span>
+        </div>
+        <button class="form-submit">Log in</button>
+    </form>
+    <script src="Login.js"></script>
+    <script>
+        Validator({
+            form: '#form-1',
+            rules: [
+                Validator.isRequired('#userName','Trường này phải là username'),
+                Validator.isRequired('#passWord','Trường này phải là password')
+            ],
+            onSubmit: function(values){
+                //console.log(Validator.isCheckLogIn(values))
+                if(Validator.isCheckLogIn(values)){
+                    alert("Log in successfully, wait 3s to convert page!");
+                    
+                    setTimeout(() => {
+                        window.location.assign("http://127.0.0.1:5500/JapanMultiChoice/testJDP.html");                   
+                    }, 3000);
+                } 
+                else alert('username and password is invalid!')
+                //console.log(values)
+              //window.location.assign("https://www.w3schools.com")
+            }
+        });
+    </script>
+</body>
+</html>

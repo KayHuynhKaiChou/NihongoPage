@@ -1,0 +1,145 @@
+:root{
+    --total-color : rgb(47, 112, 147);
+}
+
+html{
+    background-image: linear-gradient(90deg,rgb(245, 129, 203),pink);
+    font-size: 100%; /*== 16 px */
+}
+
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+img.image1{
+    position: fixed;
+    width: 250px;
+    height: 280px;
+    left: 0px;
+    top: 0px;
+}
+
+img.image2{
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    right: 0px;
+    bottom: 0px;
+}
+
+img.image3{
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    left: 0px;
+    bottom: 0px;
+}
+
+img.image4{
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    right: 40px;
+    top: 0px;
+}
+
+.swing-total{
+    width: 50vw;
+    height: fit-content;
+}
+
+.swing-total .multichoice-form{
+    width: 100%;
+    height: 500px;
+    padding-bottom: 20px;
+    border-radius: 30px;
+    /* border-bottom: 5px solid pink; */
+}
+
+.multichoice-form .question{
+    width: 100%;
+    height: 200px;
+    background-image: url(https://64.media.tumblr.com/96d9185981e22c9959d286ae6a3e2191/tumblr_mv0v3x2iyl1rg61o6o1_500.gif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-size: 2.5em;
+    color: rgb(246, 243, 245);
+    text-align: center;
+    padding-top: 60px;
+    /* line-height: 180px; */
+    box-sizing: border-box;
+    border-radius: 30px 30px 0 0;
+}
+
+.multichoice-form ul{
+    width: 100%;
+    height: 300px;
+    background-color: antiquewhite;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0px 0px 30px 30px;
+}
+
+.multichoice-form ul li{
+    width: 49.89%;
+    height: calc(300px / 2);
+    background-color: rgb(239, 239, 83);
+    padding: 10px;
+    background-clip: content-box;
+    box-sizing: border-box;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 130px;
+}
+
+.multichoice-form ul li:hover{
+    background-color: rgb(173, 173, 90);
+}
+
+.multichoice-form ul li.choice{
+    background-color: rgb(173, 173, 90);
+}
+
+.multichoice-form ul li.showDapAn{
+    background-color: rgb(11, 225, 61);
+}
+
+.multichoice-form ul li.cancelHover{
+    pointer-events: none;
+}
+
+.button-exe{
+    background-color: antiquewhite;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+.button-exe .form-button{
+    background-color: cornflowerblue;
+    font-size: 2em;
+    width: 20%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-clip: content-box;
+    border-radius: 30px;
+}
+
+.button-exe .form-button:hover{
+    background-color: rgb(56, 117, 232);
+    color: white;
+}
+
